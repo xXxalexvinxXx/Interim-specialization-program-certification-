@@ -33,4 +33,35 @@ sudo apt-get install mysql-workbench-community-dbgsym
 sudo dpkg -i 7zip_22.01+dfsg-8_amd64.deb 
 sudo dpkg -r (--remove, -p, --purge) 7zip
 
+5. Выложить историю команд в терминале ubuntu
+cat .bash_history
+mkdir prog_hw
+cd prog_hw/
+cat << EOF > pets
+dogs
+cats
+hamsters
+EOF
 
+cat << EOF > pack_animals
+horses
+camels
+donkeys
+EOF
+
+cat pets pack_animals > animals
+cat animals
+mv animals human_frends
+mkdir new_dir
+mv human_frends ./new_dir/
+cat /etc/debian_version 
+cat /etc/apt/sources.list
+sudo su -
+sudo add-apt-repository 'deb http://repo.mysql.com/apt/ubuntu/ mantic mysql-8.0'
+sudo apt-key adv --keyserver keyserver.ubuntu.com --recv-keys B7B3B788A8D3785C
+sudo apt update
+sudo aptitud
+cd ..
+ls
+sudo dpkg -i 7zip_22.01+dfsg-8_amd64.deb 
+sudo dpkg -p 7zip
