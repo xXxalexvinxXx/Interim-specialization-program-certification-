@@ -23,7 +23,6 @@ public class Main {
         PackRegistry packRegistry = new PackRegistry();
         AnimalService animalSvc = new AnimalService(petRegistry, packRegistry);
 
-
         Scanner sc = new Scanner(System.in);
 
         int command = 0;
@@ -66,7 +65,6 @@ public class Main {
                     }
                     case 5 -> System.out.println("animals number: " + animalSvc.animalsCount());
                     case FINISH_COMMAND -> {
-                        // exit from the app
                     }
                     default -> System.out.println("Command not found");
                 }
@@ -84,8 +82,8 @@ public class Main {
                 1. List pets
                 2. List pack animals
                 3. Add a new animal
-                4. Teach animal to the new commands
-                5. Show number of animals
+                4. Teach new commands
+                5. Show counter of animals
                 6. Exit""");
 
         System.out.print("Enter the command: ");
